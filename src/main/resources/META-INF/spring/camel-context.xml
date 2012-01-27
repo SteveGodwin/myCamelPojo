@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Simple Camel Context for POJO Consumers-->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+  <!-- Get Spring to look for components in the package named myCamelPojo -->
+  <component-scan xmlns="http://www.springframework.org/schema/context" base-package="myCamelPojo"/>
+  
+  <!-- Simplest possible Camel Context -->
+  <camelContext xmlns="http://camel.apache.org/schema/spring"/>
+  
+</beans>

@@ -1,0 +1,1 @@
+A simple Camel POJO Consumer that demonstrates Camel automatically converting a String into a JAXB object.
